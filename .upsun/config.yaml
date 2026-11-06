@@ -4,7 +4,8 @@ applications:
 
     hooks:
       build: |
-        ./mvn clean package -DskipTests
+        set -e
+        mvn clean package -DskipTests
 
     web:
       commands:
